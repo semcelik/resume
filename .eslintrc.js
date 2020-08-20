@@ -35,5 +35,6 @@ module.exports = {
         endOfLine: 'auto',
       },
     ],
+    '@typescript-eslint/no-use-before-define': 'off',
   },
 };
