@@ -12,7 +12,12 @@ function App(): ReactElement {
   return (
     <ThemeProvider theme={theme}>
       <GlobalAppStyle />
-      <Box height="100vh" backgroundColor={theme.color.primaryBackground}>
+      <Box
+        height="100vh"
+        backgroundColor={theme.color.primaryBackground}
+        display="flex"
+        alignItems="center"
+        justifyContent="center">
         test
       </Box>
     </ThemeProvider>

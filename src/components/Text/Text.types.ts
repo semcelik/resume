@@ -10,7 +10,9 @@ export type TTextProps = {
   fontType?: keyof typeof FONT_WEIGHT;
   size?: TSize;
   color?: string;
+  block?: boolean;
   children?: ReactNode;
+  className?: string;
 };
 
 export type TBaseTextProps = {
@@ -18,6 +20,7 @@ export type TBaseTextProps = {
   fontType: TFontType;
   size: TSize;
   color?: string;
+  block?: boolean;
 };
 
 type TFontType = keyof typeof FONT_WEIGHT;
