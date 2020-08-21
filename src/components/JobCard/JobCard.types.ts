@@ -4,5 +4,5 @@ export type TJobCardProps = {
   descriptionId: string;
   startedAt: string;
   finishedAt?: string;
-  imageSrc?: HTMLImageElement;
+  imageSrc?: string;
 };
