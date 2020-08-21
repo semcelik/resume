@@ -7,7 +7,7 @@ export type TTextProps = {
   textId: string;
   values?: string;
   as?: TAs;
-  fontType?: TFontType;
+  fontType?: keyof typeof FONT_WEIGHT;
   size?: TSize;
   color?: string;
   children?: ReactNode;
