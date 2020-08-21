@@ -15,7 +15,7 @@ function Text({
 }: TTextProps): ReactElement {
   return (
     <BaseText as={as} fontType={fontType} size={size} color={color}>
-      {textId && <Trans i18nKey={textId} values={values} />}
+      <Trans i18nKey={textId} values={values} />
       {children}
     </BaseText>
   );
