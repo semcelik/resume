@@ -1,6 +1,7 @@
 import { TSpacing } from 'types/theme';
 
 const spacing: TSpacing = {
+  spacing50: '4px',
   spacing100: '8px',
   spacing200: '16px',
   spacing300: '24px',
