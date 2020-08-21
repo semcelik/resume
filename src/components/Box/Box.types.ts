@@ -3,6 +3,8 @@ import { ElementType, ReactNode } from 'react';
 export type TBoxProps = TStyleProps & {
   as?: ElementType;
   children?: ReactNode;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  [rest: string]: any;
 };
 
 export type TBaseBoxProps = {
@@ -14,14 +16,18 @@ export type TStyleProps = {
   backgroundColor?: string;
 
   padding?: string;
-  paddingLeft?: string;
+  paddingTop?: string;
   paddingRight?: string;
+  paddingBottom?: string;
+  paddingLeft?: string;
   paddingHorizontal?: string;
   paddingVertical?: string;
 
   margin?: string;
-  marginLeft?: string;
+  marginTop?: string;
   marginRight?: string;
+  marginBottom?: string;
+  marginLeft?: string;
   marginHorizontal?: string;
   marginVertical?: string;
 

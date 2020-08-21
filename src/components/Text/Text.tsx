@@ -12,9 +12,17 @@ function Text({
   size = 'medium',
   color,
   children,
+  block,
+  className,
 }: TTextProps): ReactElement {
   return (
-    <BaseText as={as} fontType={fontType} size={size} color={color}>
+    <BaseText
+      as={as}
+      fontType={fontType}
+      size={size}
+      color={color}
+      block={block}
+      className={className}>
       <Trans i18nKey={textId} values={values} />
       {children}
     </BaseText>
