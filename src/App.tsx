@@ -1,6 +1,8 @@
 import React, { ReactElement } from 'react';
 import { ThemeProvider } from 'styled-components';
 
+import Box from 'components/Box';
+
 import useTheme from 'hooks/useTheme';
 import GlobalAppStyle from './App.style';
 
@@ -10,7 +12,9 @@ function App(): ReactElement {
   return (
     <ThemeProvider theme={theme}>
       <GlobalAppStyle />
-      <div style={{ backgroundColor: 'red' }}>test</div>
+      <Box height="100vh" backgroundColor={theme.color.primaryBackground}>
+        test
+      </Box>
     </ThemeProvider>
   );
 }
