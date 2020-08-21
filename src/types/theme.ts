@@ -7,6 +7,7 @@ export type TColor = {
 };
 
 export type TSpacing = {
+  spacing50: string;
   spacing100: string;
   spacing200: string;
   spacing300: string;
@@ -21,6 +22,8 @@ export type TThemePrimitives = {
   primary: string;
   primaryBackground: string;
   primaryText: string;
+  pillBackground: string;
+  pillText: string;
 };
 
 export type TFontWeight = 'bold' | 'normal' | 'lighter' | number;
