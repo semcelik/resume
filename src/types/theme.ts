@@ -23,10 +23,14 @@ export type TThemePrimitives = {
   primaryText: string;
 };
 
-type TFontValue = {
+export type TFontWeight = 'bold' | 'normal' | 'lighter' | number;
+
+export type TLineHeight = string | number;
+
+export type TFontValue = {
   fontSize: string;
-  fontWeight: string;
-  lineHeight: string;
+  fontWeight: TFontWeight;
+  lineHeight: TLineHeight;
 };
 
 export type TTypography = {
@@ -35,7 +39,4 @@ export type TTypography = {
   font300: TFontValue;
   font400: TFontValue;
   font500: TFontValue;
-  font600: TFontValue;
-  font700: TFontValue;
-  font800: TFontValue;
 };

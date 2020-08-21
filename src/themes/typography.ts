@@ -22,24 +22,9 @@ const typography: TTypography = {
     lineHeight: '18px',
   },
   font500: {
-    fontSize: '24px',
-    fontWeight: 'normal',
-    lineHeight: '24px',
-  },
-  font600: {
     fontSize: '28px',
     fontWeight: 'normal',
     lineHeight: '28px',
-  },
-  font700: {
-    fontSize: '36px',
-    fontWeight: 'normal',
-    lineHeight: '36px',
-  },
-  font800: {
-    fontSize: '48px',
-    fontWeight: 'normal',
-    lineHeight: '48px',
   },
 };
 
