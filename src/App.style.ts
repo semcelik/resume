@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalAppStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-  
   html {
     font-size: 14px;
     font-family: 'Lato', -apple-system, sans-serif;
