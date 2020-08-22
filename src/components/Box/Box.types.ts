@@ -49,6 +49,10 @@ export type TStyleProps = {
   height?: string;
   minHeight?: string;
   maxHeight?: string;
+
+  border?: string;
+  borderColor?: string;
+  borderRadius?: string;
 };
 
 type TDisplay = 'flex' | 'inline-flex' | 'block' | 'inline-block' | 'none' | 'initial' | 'inherit,';

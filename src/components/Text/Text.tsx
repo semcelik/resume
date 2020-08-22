@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import { Trans } from 'react-i18next';
 
 import { TTextProps } from './Text.types';
-import BaseText from './Text.style';
+import { BaseText } from './Text.style';
 
 function Text({
   textId,

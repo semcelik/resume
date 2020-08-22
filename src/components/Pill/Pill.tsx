@@ -4,7 +4,7 @@ import Text from 'components/Text';
 
 import useTheme from 'hooks/useTheme';
 import { TPillProps } from './Pill.types';
-import BasePill from './Pill.styles';
+import { BasePill } from './Pill.styles';
 
 function Pill({ textId }: TPillProps): ReactElement {
   const { theme } = useTheme();

@@ -10,6 +10,9 @@ const lightThemePrimitives: TThemePrimitives = {
   // Pill
   pillBackground: color.red500,
   pillText: color.gray500,
+
+  // Timeline
+  timelineLine: color.red500,
 };
 
 export default lightThemePrimitives;
