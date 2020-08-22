@@ -1,4 +1,4 @@
-const STYLE_PROPS: string[] = [
+export const STYLE_PROPS: string[] = [
   'backgroundColor',
 
   'padding',
@@ -35,6 +35,8 @@ const STYLE_PROPS: string[] = [
   'height',
   'minHeight',
   'maxHeight',
-];
 
-export default STYLE_PROPS;
+  'border',
+  'borderColor',
+  'borderRadius',
+];

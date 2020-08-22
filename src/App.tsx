@@ -13,7 +13,8 @@ function App(): ReactElement {
     <ThemeProvider theme={theme}>
       <GlobalAppStyle />
       <Box
-        height="100vh"
+        minHeight="100vh"
+        padding="32px"
         backgroundColor={theme.color.primaryBackground}
         display="flex"
         alignItems="center"

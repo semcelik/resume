@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { TBaseBoxProps } from './Box.types';
 
-const BaseBox = styled.div<TBaseBoxProps>(({ styleProps }) => {
+export const BaseBox = styled.div<TBaseBoxProps>(({ styleProps }) => {
   const {
     paddingHorizontal,
     paddingVertical,
@@ -17,5 +17,3 @@ const BaseBox = styled.div<TBaseBoxProps>(({ styleProps }) => {
     ...(marginVertical && { marginTop: marginVertical, marginBottom: marginVertical }),
   };
 });
-
-export default BaseBox;

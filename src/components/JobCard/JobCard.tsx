@@ -27,7 +27,7 @@ function JobCard({
 
   return (
     <Box display="inline-flex" flexDirection="row" backgroundColor={theme.color.primaryBackground}>
-      <Box display="flex" flexDirection="column" maxWidth="350px">
+      <Box display="flex" flexDirection="column" width="350px">
         <Box as={Text} textId={titleId} size="large" marginBottom={theme.spacing.spacing50} block />
         <Box as={Text} textId={subTitleId} marginBottom={theme.spacing.spacing100} block />
         <Box

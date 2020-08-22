@@ -24,6 +24,7 @@ export type TThemePrimitives = {
   primaryText: string;
   pillBackground: string;
   pillText: string;
+  timelineLine: string;
 };
 
 export type TFontWeight = 'bold' | 'normal' | 'lighter' | number;
