@@ -5,7 +5,7 @@ import { FONT_SIZE, FONT_WEIGHT, TAG } from './Text.constants';
 
 export type TTextProps = {
   textId: string;
-  values?: string;
+  values?: Record<string, string>;
   as?: TAs;
   fontType?: keyof typeof FONT_WEIGHT;
   size?: TSize;
