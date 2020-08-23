@@ -20,6 +20,7 @@ export const STYLE_PROPS: string[] = [
   'display',
   'flexDirection',
   'flexWrap',
+  'flexGrow',
   'alignItems',
   'justifyContent',
   'alignSelf',

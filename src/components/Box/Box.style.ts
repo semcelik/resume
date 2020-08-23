@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { TBaseBoxProps } from './Box.types';
 
 export const BaseBox = styled.div<TBaseBoxProps>(({ styleProps }) => {

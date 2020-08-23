@@ -13,6 +13,10 @@ const darkThemePrimitives: TThemePrimitives = {
 
   // Timeline
   timelineLine: color.red500,
+
+  // Bar
+  barBackground: color.gray600,
+  barBackgroundFilled: color.red500,
 };
 
 export default darkThemePrimitives;
