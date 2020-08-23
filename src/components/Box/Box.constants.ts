@@ -19,6 +19,7 @@ export const STYLE_PROPS: string[] = [
 
   'display',
   'flexDirection',
+  'flexWrap',
   'alignItems',
   'justifyContent',
   'alignSelf',

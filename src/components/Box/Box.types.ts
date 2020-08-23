@@ -33,6 +33,7 @@ export type TStyleProps = {
 
   display?: TDisplay;
   flexDirection?: TFlexDirection;
+  flexWrap?: TFlexWrap;
   alignItems?: TAlignItems;
   justifyContent?: TJustifyContent;
   alignSelf?: TAlignSelf;
@@ -58,6 +59,8 @@ export type TStyleProps = {
 type TDisplay = 'flex' | 'inline-flex' | 'block' | 'inline-block' | 'none' | 'initial' | 'inherit,';
 
 type TFlexDirection = 'row' | 'column';
+
+type TFlexWrap = 'nowrap' | 'wrap' | 'wrap-reverse' | 'initial' | 'inherit';
 
 type TAlignItems =
   | 'stretch'
