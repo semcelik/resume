@@ -14,6 +14,7 @@ function Text({
   children,
   block,
   className,
+  center,
 }: TTextProps): ReactElement {
   return (
     <BaseText
@@ -22,7 +23,8 @@ function Text({
       size={size}
       color={color}
       block={block}
-      className={className}>
+      className={className}
+      center={center}>
       <Trans i18nKey={textId} values={values} />
       {children}
     </BaseText>
