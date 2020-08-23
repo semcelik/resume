@@ -26,8 +26,8 @@ function JobCard({
   }, [startedAt, finishedAt]);
 
   return (
-    <Box display="inline-flex" flexDirection="row" backgroundColor={theme.color.primaryBackground}>
-      <Box display="flex" flexDirection="column" width="350px">
+    <Box display="flex" flexDirection="row">
+      <Box display="flex" flexDirection="column" flexGrow={1}>
         <Box as={Text} textId={titleId} size="large" marginBottom={theme.spacing.spacing50} block />
         <Box as={Text} textId={subTitleId} marginBottom={theme.spacing.spacing100} block />
         <Box
@@ -44,17 +44,16 @@ function JobCard({
           </Box>
         </Box>
       </Box>
-      {imageSrc && (
-        <Box
-          marginLeft={theme.spacing.spacing200}
-          width="72px"
-          height="72px"
-          display="flex"
-          alignItems="center"
-          justifyContent="center">
-          <img width="72px" height="auto" src={imageSrc} alt="Job Logo" />
-        </Box>
-      )}
+      <Box
+        marginLeft={theme.spacing.spacing200}
+        minWidth="72px"
+        width="72px"
+        height="72px"
+        display="flex"
+        alignItems="center"
+        justifyContent="center">
+        {imageSrc && <img width="72px" height="auto" src={imageSrc} alt="Job Logo" />}
+      </Box>
     </Box>
   );
 }

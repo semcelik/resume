@@ -1,8 +1,8 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
 
-import Box from '.';
 import { TBoxProps } from './Box.types';
+import Box from '.';
 
 export default {
   title: 'Components/Box',
