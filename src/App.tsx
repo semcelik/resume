@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import Box from 'components/Box';
+import Text from 'components/Text';
 
 import useTheme from 'hooks/useTheme';
 import GlobalAppStyle from './App.style';
@@ -19,7 +20,7 @@ function App(): ReactElement {
         display="flex"
         alignItems="center"
         justifyContent="center">
-        test
+        <Text textId="test.sample" size="xlarge" />
       </Box>
     </ThemeProvider>
   );
