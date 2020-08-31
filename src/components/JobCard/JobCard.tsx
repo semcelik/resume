@@ -28,16 +28,10 @@ function JobCard({
   return (
     <Box display="flex" flexDirection="row">
       <Box display="flex" flexDirection="column" flexGrow={1}>
-        <Box as={Text} textId={titleId} size="large" marginBottom={theme.spacing.spacing50} block />
+        <Text textId={titleId} size="large" />
         <Box as={Text} textId={subTitleId} marginBottom={theme.spacing.spacing100} block />
-        <Box
-          as={Text}
-          textId={descriptionId}
-          marginBottom={theme.spacing.spacing200}
-          fontType="light"
-          block
-        />
-        <Box display="flex" alignItems="center">
+        <Text textId={descriptionId} fontType="light" />
+        <Box display="flex" alignItems="center" marginTop={theme.spacing.spacing200}>
           <DateIcon iconColor={theme.color.primary} />
           <Box as={Text} marginLeft={theme.spacing.spacing50} fontType="light" size="small">
             {date}
