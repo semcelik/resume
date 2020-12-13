@@ -1,3 +1,5 @@
+import { TI18NId } from 'types/common';
+
 export type TPillProps = {
-  textId: string;
+  textId: TI18NId;
 };

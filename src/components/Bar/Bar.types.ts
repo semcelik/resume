@@ -1,5 +1,7 @@
+import { TI18NId } from 'types/common';
+
 export type TBarProps = {
-  titleId: string;
+  titleId: TI18NId;
   percentage: number;
-  descriptionId: string;
+  descriptionId: TI18NId;
 };

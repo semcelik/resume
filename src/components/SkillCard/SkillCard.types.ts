@@ -2,7 +2,9 @@ import { FC } from 'react';
 
 import { TIconsProps } from 'components/Icons/Icons.type';
 
+import { TI18NId } from 'types/common';
+
 export type TSkillCardProps = {
   icon: FC<TIconsProps>;
-  textId: string;
+  textId: TI18NId;
 };
