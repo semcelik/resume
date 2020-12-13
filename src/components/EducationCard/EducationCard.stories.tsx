@@ -12,13 +12,12 @@ export default {
   argTypes: {
     school: ARG_TYPES.id,
     year: ARG_TYPES.id,
-    gpa: ARG_TYPES.id,
     major: ARG_TYPES.id,
   },
   args: {
     school: 'test.sample',
     year: 'test.sample',
-    gpa: 'test.sample',
+    gpa: '3.14',
     major: 'test.sample',
   },
 } as Meta;

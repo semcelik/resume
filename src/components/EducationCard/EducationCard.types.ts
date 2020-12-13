@@ -4,6 +4,6 @@ export type TEducationCardProps = {
   school: TI18NId;
   imageSrc?: string;
   year: TI18NId;
-  gpa?: TI18NId;
+  gpa?: string;
   major?: TI18NId;
 };
