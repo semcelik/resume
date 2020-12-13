@@ -2,9 +2,9 @@ import React, { ReactElement } from 'react';
 
 import Text from 'components/Text';
 
+import { FontSize } from 'constants/props';
 import { TBarProps } from './Bar.types';
 import { BarContent, BarFilled, BarWrapper, Container, Header } from './Bar.style';
-import { FontSize } from '../Text/Text.constants';
 
 function Bar({ titleId, percentage, descriptionId }: TBarProps): ReactElement {
   return (

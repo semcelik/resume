@@ -4,7 +4,7 @@ import Box from 'components/Box';
 import Text from 'components/Text';
 
 import ThemeProvider from 'contexts/ThemeProvider';
-import { FontSize } from './components/Text/Text.constants';
+import { FontSize } from 'constants/props';
 
 function App(): ReactElement {
   return (

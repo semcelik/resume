@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { ColorProps } from 'styled-system';
 
-import { FontSize, FontWeight } from './Text.constants';
+import { FontSize, FontWeight } from 'constants/props';
 
 export type TTextProps = {
   size?: FontSize;

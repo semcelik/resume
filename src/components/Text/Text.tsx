@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react';
 import { Trans } from 'react-i18next';
 
+import { FontSize, FontWeight } from 'constants/props';
 import { BaseText } from './Text.style';
-import { FontSize, FontWeight } from './Text.constants';
 import { TTextProps } from './Text.types';
 
 function Text({
