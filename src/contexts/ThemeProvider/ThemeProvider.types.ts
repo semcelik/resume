@@ -1,6 +1,6 @@
-import THEME from 'constants/theme';
+import Theme from 'constants/theme';
 
 export type TThemeContext = {
-  theme: THEME;
+  theme: Theme;
   toggleTheme: () => void;
 };

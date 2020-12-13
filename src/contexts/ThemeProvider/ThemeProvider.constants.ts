@@ -1,7 +1,7 @@
-import THEME from 'constants/theme';
+import Theme from 'constants/theme';
 import { NOOP } from 'constants/common';
 
 export const INITIAL_STATE = {
-  theme: THEME.LIGHT,
+  theme: Theme.LIGHT,
   toggleTheme: NOOP,
 };

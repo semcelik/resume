@@ -2,9 +2,9 @@ import React, { memo, ReactElement } from 'react';
 
 import Text from 'components/Text';
 
+import { FontSize } from 'constants/props';
 import { TPillProps } from './Pill.types';
 import { Container } from './Pill.style';
-import { FontSize } from '../Text/Text.constants';
 
 function Pill({ textId }: TPillProps): ReactElement {
   return (

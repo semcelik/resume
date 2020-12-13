@@ -2,9 +2,9 @@ import React, { ReactElement } from 'react';
 
 import Text from 'components/Text';
 
+import { FontSize } from 'constants/props';
 import { TSkillCardProps } from './SkillCard.types';
 import { Container, TextWrapper } from './SkillCard.style';
-import { FontSize } from '../Text/Text.constants';
 
 function SkillCard({ icon: Icon, textId }: TSkillCardProps): ReactElement {
   return (

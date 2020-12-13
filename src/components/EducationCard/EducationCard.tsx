@@ -2,9 +2,9 @@ import React, { ReactElement } from 'react';
 
 import Text from 'components/Text';
 
+import { FontSize } from 'constants/props';
 import { TEducationCardProps } from './EducationCard.types';
 import { Container, Content, ImageWrapper, InfoWrapper, MajorText } from './EducationCard.style';
-import { FontSize } from '../Text/Text.constants';
 
 function EducationCard({ school, imageSrc, year, gpa, major }: TEducationCardProps): ReactElement {
   return (

@@ -14,7 +14,6 @@ export const Content = styled.div`
 `;
 
 export const SubTitleText = styled(Text)`
-  display: block;
   margin-bottom: 8px;
 `;
 

@@ -1,7 +1,7 @@
 import React, { createContext, ReactElement, useContext, useState } from 'react';
 import { ThemeProvider as BaseThemeProvider } from 'styled-components';
 
-import THEME from 'constants/theme';
+import Theme from 'constants/theme';
 import { darkTheme, lightTheme } from 'themes/theme';
 import { TChildrenOnly } from 'types/common';
 import { INITIAL_STATE } from './ThemeProvider.constants';
@@ -14,11 +14,11 @@ function ThemeProvider({ children }: TChildrenOnly): ReactElement {
   const [selectedTheme, setSelectedTheme] = useState(INITIAL_STATE.theme);
 
   function getTheme() {
-    return selectedTheme === THEME.LIGHT ? lightTheme : darkTheme;
+    return selectedTheme === Theme.LIGHT ? lightTheme : darkTheme;
   }
 
   function toggleTheme() {
-    setSelectedTheme((prevTheme) => (prevTheme === THEME.LIGHT ? THEME.DARK : THEME.LIGHT));
+    setSelectedTheme((prevTheme) => (prevTheme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT));
   }
 
   const value = {

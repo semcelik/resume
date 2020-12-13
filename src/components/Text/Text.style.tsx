@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { variant, color } from 'styled-system';
 
+import { FontSize, FontWeight } from 'constants/props';
 import { TBaseTextProps } from './Text.types';
-import { FontSize, FontWeight } from './Text.constants';
 
 const sizeVariant = variant({
   prop: 'size',

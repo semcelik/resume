@@ -1,10 +1,11 @@
 import React, { ReactElement, useMemo } from 'react';
+import { useTheme } from 'styled-components';
 
 import { DateIcon } from 'components/Icons';
 import Text from 'components/Text';
 
 import getFormattedDate from 'helpers/getFormattedDate';
-
+import { FontSize, FontWeight } from 'constants/props';
 import { TJobCardProps } from './JobCard.types';
 import {
   Container,
@@ -14,7 +15,6 @@ import {
   ImageWrapper,
   SubTitleText,
 } from './JobCard.style';
-import { FontSize, FontWeight } from '../Text/Text.constants';
 
 function JobCard({
   titleId,
@@ -24,6 +24,8 @@ function JobCard({
   finishedAt,
   imageSrc,
 }: TJobCardProps): ReactElement {
+  const { colors } = useTheme();
+
   const date = useMemo(() => {
     const formattedStartedAt = getFormattedDate({ dateString: startedAt });
     const formattedFinishedAt = getFormattedDate({ dateString: finishedAt, defaultValue: '...' });
@@ -38,7 +40,7 @@ function JobCard({
         <SubTitleText textId={subTitleId} />
         <Text textId={descriptionId} fontWeight={FontWeight.light} />
         <DateWrapper>
-          <DateIcon iconColor="primary" />
+          <DateIcon iconColor={colors.primary} />
           <DateText fontWeight={FontWeight.light} size={FontSize.small}>
             {date}
           </DateText>
