@@ -3,12 +3,19 @@ import { Meta, Story } from '@storybook/react/types-6-0';
 
 import { ApolloIcon, ReactIcon } from 'components/Icons';
 
+import { ARG_TYPES } from 'constants/storybook';
 import { TSkillCardProps } from './SkillCard.types';
 import SkillCard from '.';
 
 export default {
   title: 'Components/SkillCard',
   component: SkillCard,
+  argTypes: {
+    textId: ARG_TYPES.id,
+  },
+  args: {
+    textId: 'test.sample',
+  },
 } as Meta;
 
 const Template: Story<TSkillCardProps> = (args) => <SkillCard {...args} />;
@@ -17,13 +24,11 @@ const Template: Story<TSkillCardProps> = (args) => <SkillCard {...args} />;
 export const WithReactIcon = Template.bind({});
 
 WithReactIcon.args = {
-  textId: 'React',
   icon: ReactIcon,
 };
 
 export const WithApolloIcon = Template.bind({});
 
 WithApolloIcon.args = {
-  textId: 'Apollo',
   icon: ApolloIcon,
 };

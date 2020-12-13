@@ -1,23 +1,21 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
 
-import Pill from '.';
+import { ARG_TYPES } from 'constants/storybook';
 import { TPillProps } from './Pill.types';
+import Pill from '.';
 
 export default {
   title: 'Components/Pill',
   component: Pill,
   argTypes: {
-    textId: {
-      control: 'text',
-    },
+    textId: ARG_TYPES.id,
+  },
+  args: {
+    textId: 'test.sample',
   },
 } as Meta;
 
 const Template: Story<TPillProps> = (args) => <Pill {...args} />;
 
 export const Default = Template.bind({});
-
-Default.args = {
-  textId: 'test.sample',
-};

@@ -1,7 +1,9 @@
+import { TI18NId } from 'types/common';
+
 export type TEducationCardProps = {
-  school: string;
+  school: TI18NId;
   imageSrc?: string;
-  year: string;
+  year: TI18NId;
   gpa?: string;
-  major?: string;
+  major?: TI18NId;
 };
