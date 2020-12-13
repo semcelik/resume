@@ -1,8 +1,5 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-
-import useTheme from 'hooks/useTheme';
-import GlobalAppStyle from 'App.style';
+import ThemeProvider from '../src/contexts/ThemeProvider';
 import 'i18n';
 
 export const parameters = {
@@ -11,18 +8,8 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <Theme>
+    <ThemeProvider>
       <Story />
-    </Theme>
+    </ThemeProvider>
   ),
 ];
-
-function Theme({ children }) {
-  const { theme } = useTheme();
-  return (
-    <ThemeProvider theme={theme}>
-      <GlobalAppStyle />
-      {children}
-    </ThemeProvider>
-  );
-}

@@ -1,24 +1,16 @@
-import React, { ReactElement, memo } from 'react';
+import React, { memo, ReactElement } from 'react';
 
 import Text from 'components/Text';
-import Box from 'components/Box';
 
-import useTheme from 'hooks/useTheme';
 import { TPillProps } from './Pill.types';
+import { Container } from './Pill.style';
+import { FontSize } from '../Text/Text.constants';
 
 function Pill({ textId }: TPillProps): ReactElement {
-  const { theme } = useTheme();
-
   return (
-    <Box
-      display="inline-flex"
-      alignItems="center"
-      paddingHorizontal={theme.spacing.spacing100}
-      paddingVertical={theme.spacing.spacing50}
-      backgroundColor={theme.color.pillBackground}
-      borderRadius="8px">
-      <Text textId={textId} size="small" color={theme.color.pillText} />
-    </Box>
+    <Container backgroundColor="pillBackground">
+      <Text textId={textId} size={FontSize.small} color="pillText" />
+    </Container>
   );
 }
 
