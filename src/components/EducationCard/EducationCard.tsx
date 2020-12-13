@@ -1,28 +1,26 @@
 import React, { ReactElement } from 'react';
 
-import Box from 'components/Box';
 import Text from 'components/Text';
 
-import useTheme from 'hooks/useTheme';
 import { TEducationCardProps } from './EducationCard.types';
+import { Container, Content, ImageWrapper, InfoWrapper, MajorText } from './EducationCard.style';
+import { FontSize } from '../Text/Text.constants';
 
 function EducationCard({ school, imageSrc, year, gpa, major }: TEducationCardProps): ReactElement {
-  const { theme } = useTheme();
-
   return (
-    <Box display="flex">
-      <Box width="64px" height="64px" display="flex" alignItems="center" justifyContent="center">
+    <Container>
+      <ImageWrapper>
         {imageSrc && <img width="64px" height="auto" src={imageSrc} alt="School logo" />}
-      </Box>
-      <Box marginLeft={theme.spacing.spacing200} flexGrow={1}>
-        <Text textId={school} size="large" />
-        <Box display="flex" justifyContent="space-between">
-          <Text textId={year} size="xsmall" />
-          {gpa && <Text textId="label.gpa" values={{ gpa }} size="xsmall" />}
-        </Box>
-        {major && <Box as={Text} marginTop={theme.spacing.spacing100} textId={major} />}
-      </Box>
-    </Box>
+      </ImageWrapper>
+      <Content>
+        <Text textId={school} size={FontSize.large} />
+        <InfoWrapper>
+          <Text textId={year} size={FontSize.xsmall} />
+          {gpa && <Text textId="label.gpa" values={{ gpa }} size={FontSize.xsmall} />}
+        </InfoWrapper>
+        {major && <MajorText textId={major} />}
+      </Content>
+    </Container>
   );
 }
 

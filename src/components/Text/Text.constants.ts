@@ -1,22 +1,13 @@
-import typography from 'themes/typography';
+export enum FontWeight {
+  light,
+  normal,
+  bold,
+}
 
-export const FONT_WEIGHT = {
-  light: 200,
-  normal: 'normal',
-  bold: 'bold',
-};
-
-export const FONT_SIZE = {
-  xsmall: typography.font100,
-  small: typography.font200,
-  medium: typography.font300,
-  large: typography.font400,
-  xlarge: typography.font500,
-};
-
-export const TAG = {
-  p: 'p',
-  span: 'span',
-  label: 'label',
-  div: 'div',
-};
+export enum FontSize {
+  xsmall,
+  small,
+  medium,
+  large,
+  xlarge,
+}

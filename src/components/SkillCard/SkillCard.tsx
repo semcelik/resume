@@ -1,24 +1,19 @@
 import React, { ReactElement } from 'react';
 
-import Box from 'components/Box';
 import Text from 'components/Text';
 
-import useTheme from 'hooks/useTheme';
 import { TSkillCardProps } from './SkillCard.types';
+import { Container, TextWrapper } from './SkillCard.style';
+import { FontSize } from '../Text/Text.constants';
 
 function SkillCard({ icon: Icon, textId }: TSkillCardProps): ReactElement {
-  const { theme } = useTheme();
-
   return (
-    <Box
-      display="inline-flex"
-      flexDirection="column"
-      alignItems="center"
-      paddingHorizontal={theme.spacing.spacing100}
-      paddingVertical={theme.spacing.spacing50}>
+    <Container>
       <Icon width="24px" height="24px" />
-      <Box as={Text} textId={textId} size="xsmall" marginTop={theme.spacing.spacing50} center />
-    </Box>
+      <TextWrapper>
+        <Text textId={textId} size={FontSize.xsmall} />
+      </TextWrapper>
+    </Container>
   );
 }
 

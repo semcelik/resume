@@ -1,43 +1,19 @@
 import { ReactNode } from 'react';
+import { ColorProps } from 'styled-system';
 
-import { TFontWeight, TLineHeight } from 'types/theme';
-import { FONT_SIZE, FONT_WEIGHT, TAG } from './Text.constants';
+import { FontSize, FontWeight } from './Text.constants';
 
 export type TTextProps = {
-  textId: string;
-  values?: Record<string, string>;
-  as?: TAs;
-  fontType?: keyof typeof FONT_WEIGHT;
-  size?: TSize;
+  size?: FontSize;
+  fontWeight?: FontWeight;
   color?: string;
-  block?: boolean;
-  children?: ReactNode;
+  textId?: string;
+  values?: Record<string, string>;
   className?: string;
-  center?: boolean;
+  children?: ReactNode;
 };
 
 export type TBaseTextProps = {
-  as: TAs;
-  fontType: TFontType;
-  size: TSize;
-  color?: string;
-  block?: boolean;
-  center?: boolean;
-};
-
-type TFontType = keyof typeof FONT_WEIGHT;
-
-type TSize = keyof typeof FONT_SIZE;
-
-type TAs = keyof typeof TAG;
-
-export type TGetFontStylesProp = {
-  fontType: TFontType;
-  size: TSize;
-};
-
-export type TGetFontStyles = {
-  fontWeight: TFontWeight;
-  fontSize: string;
-  lineHeight: TLineHeight;
-};
+  size: FontSize;
+  fontWeight: FontWeight;
+} & ColorProps;

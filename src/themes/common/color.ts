@@ -1,6 +1,6 @@
 import { TColor } from 'types/theme';
 
-const color: TColor = {
+const COLOR: TColor = {
   black900: '#000000',
 
   red500: '#A41414',
@@ -10,4 +10,4 @@ const color: TColor = {
   gray400: '#BCB9C1',
 };
 
-export default color;
+export default COLOR;

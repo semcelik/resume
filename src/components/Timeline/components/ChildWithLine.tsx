@@ -1,11 +1,9 @@
 import React, { ReactElement } from 'react';
 
-import Box from 'components/Box';
-
 import useOffsetHeight from 'hooks/useOffsetHeight';
-import useTheme from 'hooks/useTheme';
 import Line from './Line';
 import { TChildWithLineProps } from '../Timeline.types';
+import { Content, ContentWrapper } from '../Timeline.style';
 
 function ChildWithLine({
   children,
@@ -14,16 +12,15 @@ function ChildWithLine({
   isLast,
   lineTop,
 }: TChildWithLineProps): ReactElement {
-  const { theme } = useTheme();
   const [elementRef, offsetHeight] = useOffsetHeight();
 
   return (
-    <Box ref={elementRef} position="relative" {...(!isLast && { paddingBottom: gap })}>
+    <ContentWrapper ref={elementRef} {...(!isLast && { paddingBottom: gap })}>
       {offsetHeight > 0 && (
         <Line height={offsetHeight} onlyCircle={isLast} lineTop={lineTop} isFilled={!isFirst} />
       )}
-      <Box paddingLeft={theme.spacing.spacing300}>{children}</Box>
-    </Box>
+      <Content>{children}</Content>
+    </ContentWrapper>
   );
 }
 

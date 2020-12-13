@@ -1,30 +1,21 @@
 import React, { ReactElement } from 'react';
 import { Trans } from 'react-i18next';
 
-import { TTextProps } from './Text.types';
 import { BaseText } from './Text.style';
+import { FontSize, FontWeight } from './Text.constants';
+import { TTextProps } from './Text.types';
 
 function Text({
   textId,
   values,
-  as = 'span',
-  fontType = 'normal',
-  size = 'medium',
+  size = FontSize.medium,
+  fontWeight = FontWeight.normal,
   color,
   children,
-  block,
   className,
-  center,
 }: TTextProps): ReactElement {
   return (
-    <BaseText
-      as={as}
-      fontType={fontType}
-      size={size}
-      color={color}
-      block={block}
-      className={className}
-      center={center}>
+    <BaseText size={size} fontWeight={fontWeight} color={color} className={className}>
       <Trans i18nKey={textId} values={values} />
       {children}
     </BaseText>

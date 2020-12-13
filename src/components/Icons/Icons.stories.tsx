@@ -24,8 +24,8 @@ function Icons({ color }: { color: string }) {
       {Object.entries(icons).map(([name, Icon]) => (
         <Box key={name} display="flex" flexDirection="column" alignItems="center" margin="16px">
           <Icon width="48px" height="48px" iconColor={color} />
-          <Box as={Text} marginTop="8px">
-            {name}
+          <Box marginTop="8px">
+            <Text>{name}</Text>
           </Box>
         </Box>
       ))}
