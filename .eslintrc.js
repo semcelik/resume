@@ -45,4 +45,12 @@ module.exports = {
       },
     ],
   },
+  overrides: [
+    {
+      files: ['**/setupTests.ts'],
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
+      },
+    },
+  ],
 };

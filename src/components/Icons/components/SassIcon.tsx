@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 
-import { TIconsProps } from '../Icons.type';
+import { TIconsProps } from '../Icons.types';
 
 function SassIcon({ iconColor, ...rest }: TIconsProps): ReactElement {
   return (

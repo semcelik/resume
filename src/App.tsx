@@ -1,16 +1,18 @@
 import React, { ReactElement } from 'react';
 
 import Box from 'components/Box';
-import Text from 'components/Text';
 
 import ThemeProvider from 'contexts/ThemeProvider';
-import { FontSize } from 'constants/props';
+
+import Resume from './pages/Resume';
 
 function App(): ReactElement {
   return (
     <ThemeProvider>
-      <Box>
-        <Text textId="test.sample" size={FontSize.small} />
+      <Box backgroundColor="primaryBackground">
+        <Box maxWidth={960} margin="0px auto">
+          <Resume />
+        </Box>
       </Box>
     </ThemeProvider>
   );
