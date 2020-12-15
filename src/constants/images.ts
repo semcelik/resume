@@ -7,8 +7,10 @@ import migros from 'assets/images/migros.png';
 import sehirfm from 'assets/images/sehirfm.png';
 import stajokulu from 'assets/images/stajokulu.png';
 import startupheroes from 'assets/images/startupheroes.png';
+import profile from 'assets/images/profile.jpeg';
 
 const IMAGES = {
+  profileImage: profile,
   acevImage: acev,
   grimorImage: grimor,
   huaweiImage: huawei,

@@ -9,7 +9,7 @@ import {
   ColorProps,
 } from 'styled-system';
 
-export type TStyledBoxProps = { ref: Ref<HTMLDivElement> } & SpaceProps &
+export type TStyledBoxProps = { ref?: Ref<HTMLDivElement> } & SpaceProps &
   LayoutProps &
   FlexboxProps &
   DisplayProps &

@@ -4,10 +4,11 @@ import Text from 'components/Text';
 
 export const Container = styled.div`
   display: flex;
+  margin-bottom: 16px;
 `;
 
 export const ImageWrapper = styled.div`
-  width: 64px;
+  min-width: 64px;
   height: 64px;
   display: flex;
   align-items: center;
@@ -17,6 +18,7 @@ export const ImageWrapper = styled.div`
 export const Content = styled.div`
   flex-grow: 1;
   margin-left: 16px;
+  max-width: 200px;
 `;
 
 export const InfoWrapper = styled.div`

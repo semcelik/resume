@@ -1,3 +1,5 @@
+export type { TIconsProps } from './Icons.types';
+
 export { default as DateIcon } from './components/DateIcon';
 export { default as ApolloIcon } from './components/ApolloIcon';
 export { default as GraphqlIcon } from './components/GraphqlIcon';

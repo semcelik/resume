@@ -6,7 +6,7 @@ import darkThemePrimitives from './darkThemePrimitives';
 function createTheme(themePrimitives: TThemePrimitives): TTheme {
   return {
     colors: themePrimitives,
-    spacing: SPACING,
+    space: SPACING,
   };
 }
 

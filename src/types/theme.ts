@@ -1,6 +1,6 @@
 export type TTheme = {
   colors: TThemePrimitives;
-  spacing: TSpacing;
+  space: TSpacing;
 };
 
 export type TSpacing = {
