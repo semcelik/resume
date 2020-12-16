@@ -1,0 +1,22 @@
+name: Check Commit Author
+
+on: [ push ]
+
+env:
+  NODE_VERSION: 14.x
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Commit Author Action
+        id: semcelik
+        uses: semcelik/commit-author-action@v1.0.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          email_domain: "@gmail.com"
+          error_on_fail: true
