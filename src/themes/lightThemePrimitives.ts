@@ -1,22 +1,22 @@
 import { TThemePrimitives } from 'types/theme';
 
-import COLOR from './common/color';
+import COLORS from './common/colors';
 
 const lightThemePrimitives: TThemePrimitives = {
-  primary: COLOR.red500,
-  primaryBackground: COLOR.gray500,
-  primaryText: COLOR.black900,
+  primary: COLORS.red500,
+  primaryBackground: COLORS.gray500,
+  primaryText: COLORS.black900,
 
   // Pill
-  pillBackground: COLOR.red500,
-  pillText: COLOR.gray500,
+  pillBackground: COLORS.red500,
+  pillText: COLORS.gray500,
 
   // Timeline
-  timelineLine: COLOR.red500,
+  timelineLine: COLORS.red500,
 
   // Bar
-  barBackground: COLOR.gray600,
-  barBackgroundFilled: COLOR.red500,
+  barBackground: COLORS.gray600,
+  barBackgroundFilled: COLORS.red500,
 };
 
 export default lightThemePrimitives;

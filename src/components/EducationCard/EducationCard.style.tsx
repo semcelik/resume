@@ -18,7 +18,8 @@ export const ImageWrapper = styled.div`
 export const Content = styled.div`
   flex-grow: 1;
   margin-left: 16px;
-  max-width: 200px;
+  min-width: 200px;
+  max-width: 300px;
 `;
 
 export const InfoWrapper = styled.div`

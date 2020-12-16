@@ -11,7 +11,7 @@ function Header(): ReactElement {
   return (
     <Content display="flex">
       <Box marginRight="l" display="flex">
-        <img width={128} height="auto" src={IMAGES.profileImage} alt="Profile" />
+        <img width={128} height={150} src={IMAGES.profileImage} alt="Profile" />
       </Box>
       <Box display="flex" justifyContent="center" flexDirection="column" paddingTop="l">
         <Text

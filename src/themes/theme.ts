@@ -1,12 +1,14 @@
 import { TTheme, TThemePrimitives } from 'types/theme';
-import SPACING from './common/spacing';
+import SPACES from './common/spaces';
+import BREAKPOINTS from './common/breakpoints';
 import lightThemePrimitives from './lightThemePrimitives';
 import darkThemePrimitives from './darkThemePrimitives';
 
 function createTheme(themePrimitives: TThemePrimitives): TTheme {
   return {
     colors: themePrimitives,
-    space: SPACING,
+    space: SPACES,
+    breakpoints: BREAKPOINTS,
   };
 }
 

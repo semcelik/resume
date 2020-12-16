@@ -12,9 +12,11 @@ import { SKILLS_CONTENT } from '../Resume.constants';
 function Skills(): ReactElement {
   return (
     <Content headerId="page.skills.title">
-      {SKILLS_CONTENT.TOP_SKILLS.map(({ icon, textId }) => (
-        <SkillCard key={textId} icon={icon} textId={textId} />
-      ))}
+      <Box display="flex" flexWrap="wrap" justifyContent="center">
+        {SKILLS_CONTENT.TOP_SKILLS.map(({ icon, textId }) => (
+          <SkillCard key={textId} icon={icon} textId={textId} />
+        ))}
+      </Box>
       <Box marginTop="m">
         <Text textId="page.skills.alsoHaveTitle" fontWeight={FontWeight.light} />
         <Box marginTop="s" display="flex" flexWrap="wrap" justifyContent="center">

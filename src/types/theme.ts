@@ -1,9 +1,10 @@
 export type TTheme = {
   colors: TThemePrimitives;
-  space: TSpacing;
+  space: TSpaces;
+  breakpoints: TBreakpoints;
 };
 
-export type TSpacing = {
+export type TSpaces = {
   xs: number;
   s: number;
   m: number;
@@ -12,7 +13,7 @@ export type TSpacing = {
   xxl: number;
 };
 
-export type TColor = {
+export type TColors = {
   black900: string;
   red500: string;
   gray600: string;
@@ -29,4 +30,12 @@ export type TThemePrimitives = {
   timelineLine: string;
   barBackground: string;
   barBackgroundFilled: string;
+};
+
+export type TBreakpoints = string[] & {
+  xs?: string;
+  s?: string;
+  m?: string;
+  l?: string;
+  xl?: string;
 };
