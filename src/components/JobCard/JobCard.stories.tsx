@@ -15,10 +15,10 @@ export default {
     descriptionId: ARG_TYPES.id,
   },
   args: {
-    titleId: 'test.sample',
-    subTitleId: 'test.sample',
-    descriptionId: 'test.sample',
-    startedAt: '2018-4',
+    titleId: 'labels.frontendDeveloper',
+    subTitleId: 'labels.wamo',
+    descriptionId: 'pages.professionalHistory.wamo.descriptionId',
+    startedAt: '2020-11',
   },
 } as Meta;
 
@@ -27,21 +27,21 @@ const Template: Story<TJobCardProps> = (args) => <JobCard {...args} />;
 export const WithoutFinishedAt = Template.bind({});
 
 WithoutFinishedAt.argTypes = {
-  imageSrc: { defaultValue: IMAGES.iyzicoImage, ...ARG_TYPES.images },
+  imageSrc: { defaultValue: IMAGES.wamoImage, ...ARG_TYPES.images },
 };
 
 export const WithoutImage = Template.bind({});
 
 WithoutImage.args = {
-  finishedAt: '2019-05',
+  finishedAt: '2030-05',
 };
 
 export const WithImage = Template.bind({});
 
 WithImage.argTypes = {
-  imageSrc: { defaultValue: IMAGES.iyzicoImage, ...ARG_TYPES.images },
+  imageSrc: { defaultValue: IMAGES.wamoImage, ...ARG_TYPES.images },
 };
 
 WithImage.args = {
-  finishedAt: '2019-05',
+  finishedAt: '2030-05',
 };

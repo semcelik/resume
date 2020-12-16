@@ -10,15 +10,14 @@ export default {
   title: 'Components/EducationCard',
   component: EducationCard,
   argTypes: {
-    school: ARG_TYPES.id,
-    year: ARG_TYPES.id,
-    major: ARG_TYPES.id,
+    schoolId: ARG_TYPES.id,
+    majorId: ARG_TYPES.id,
   },
   args: {
-    school: 'test.sample',
-    year: 'test.sample',
-    gpa: '3.14',
-    major: 'test.sample',
+    schoolId: 'page.education.iu.school',
+    year: '2012-2017',
+    gpa: 3.12,
+    majorId: 'page.education.iu.major',
   },
 } as Meta;
 
@@ -26,7 +25,6 @@ const Template: Story<TEducationCardProps> = (args) => <EducationCard {...args} 
 
 export const WithImage = Template.bind({});
 
-// FIXME: (semih) add more accurate samples
 WithImage.argTypes = {
   imageSrc: {
     defaultValue: IMAGES.iuImage,

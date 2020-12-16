@@ -12,7 +12,7 @@ export default {
     textId: ARG_TYPES.id,
   },
   args: {
-    textId: 'test.sample',
+    textId: 'page.skills.typescript',
   },
 } as Meta;
 
