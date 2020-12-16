@@ -14,8 +14,8 @@ export default {
     percentage: { control: { type: 'range', min: 0, max: 100 }, defaultValue: 20 },
   },
   args: {
-    titleId: 'test.sample',
-    descriptionId: 'test.sample',
+    titleId: 'labels.turkish',
+    descriptionId: 'labels.native',
   },
 } as Meta;
 

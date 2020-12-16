@@ -3,6 +3,7 @@ import { TBarProps } from 'components/Bar';
 import { TEducationCardProps } from 'components/EducationCard';
 import { TSkillCardProps } from 'components/SkillCard';
 import { TPillProps } from 'components/Pill';
+import { TJobCardProps } from 'components/JobCard';
 
 import IMAGES from 'constants/images';
 
@@ -70,5 +71,63 @@ export const LANGUAGE_CONTENTS: TBarProps[] = [
     titleId: 'labels.english',
     descriptionId: 'labels.intermediate',
     percentage: 85,
+  },
+];
+
+export const PROFESSIONAL_HISTORY_CONTENTS: TJobCardProps[] = [
+  {
+    titleId: 'labels.frontendDeveloper',
+    subTitleId: 'labels.wamo',
+    imageSrc: IMAGES.wamoImage,
+    descriptionId: 'pages.professionalHistory.wamo.descriptionId',
+    startedAt: '2020-11',
+  },
+  {
+    titleId: 'labels.frontendDeveloper',
+    subTitleId: 'labels.iyzico',
+    imageSrc: IMAGES.iyzicoImage,
+    descriptionId: 'pages.professionalHistory.iyzico.descriptionId',
+    startedAt: '2019-09',
+    finishedAt: '2020-11',
+  },
+  {
+    titleId: 'labels.frontendDeveloper',
+    subTitleId: 'labels.huawei',
+    imageSrc: IMAGES.huaweiImage,
+    descriptionId: 'pages.professionalHistory.huawei.descriptionId',
+    startedAt: '2018-03',
+    finishedAt: '2019-09',
+  },
+  {
+    titleId: 'labels.frontendDeveloper',
+    subTitleId: 'labels.startupHeroes',
+    imageSrc: IMAGES.startupheroesImage,
+    descriptionId: 'pages.professionalHistory.startupHeroes.descriptionId',
+    startedAt: '2017-07',
+    finishedAt: '2018-03',
+  },
+  {
+    titleId: 'labels.frontendDeveloper',
+    subTitleId: 'labels.migros',
+    imageSrc: IMAGES.migrosImage,
+    descriptionId: 'pages.professionalHistory.migros.descriptionId',
+    startedAt: '2017-01',
+    finishedAt: '2017-07',
+  },
+  {
+    titleId: 'labels.intern',
+    subTitleId: 'labels.grimor',
+    imageSrc: IMAGES.grimorImage,
+    descriptionId: 'pages.professionalHistory.grimor.descriptionId',
+    startedAt: '2016-07',
+    finishedAt: '2016-09',
+  },
+  {
+    titleId: 'labels.intern',
+    subTitleId: 'labels.stajOkulu',
+    imageSrc: IMAGES.stajokuluImage,
+    descriptionId: 'pages.professionalHistory.stajOkulu.descriptionId',
+    startedAt: '2015-07',
+    finishedAt: '2015-09',
   },
 ];

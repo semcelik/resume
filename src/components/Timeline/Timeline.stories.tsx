@@ -1,9 +1,10 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
 
-import Timeline from '.';
+import Box from 'components/Box';
+
 import { TTimelineProps } from './Timeline.types';
-import Box from '../Box';
+import Timeline from '.';
 
 export default {
   title: 'Components/Timeline',

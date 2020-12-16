@@ -7,6 +7,7 @@ import Education from './components/Education';
 import Header from './components/Header';
 import Skills from './components/Skills';
 import Language from './components/Language';
+import ProfessionalHistory from './components/ProfessionalHistory';
 
 function Resume(): ReactElement {
   return (
@@ -19,7 +20,7 @@ function Resume(): ReactElement {
         <Language />
       </Box>
       <Box flex={2} marginLeft="l">
-        TODO
+        <ProfessionalHistory />
       </Box>
     </Box>
   );
