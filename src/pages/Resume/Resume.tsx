@@ -11,15 +11,20 @@ import ProfessionalHistory from './components/ProfessionalHistory';
 
 function Resume(): ReactElement {
   return (
-    <Box paddingX="l" paddingY="m" display="flex" flexDirection="row">
-      <Box flex={1.5} marginRight="l">
+    <Box
+      paddingX="l"
+      paddingY="m"
+      display="flex"
+      flexDirection={{ _: 'column', s: 'row' }}
+      flexWrap="wrap">
+      <Box flex={1.5} marginRight={{ s: 'l' }}>
         <Header />
         <AboutMe />
         <Education />
         <Skills />
         <Language />
       </Box>
-      <Box flex={2} marginLeft="l">
+      <Box flex={2} marginLeft={{ s: 'l' }}>
         <ProfessionalHistory />
       </Box>
     </Box>
