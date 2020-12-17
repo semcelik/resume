@@ -12,6 +12,8 @@ import {
   SpaceProps,
 } from 'styled-system';
 
+import { getOnDarkBoxShadow } from 'helpers/style';
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -40,10 +42,12 @@ export const LineContent = styled.div<BorderProps & LayoutProps & ColorProps>`
   ${border};
   ${layout};
   border-radius: 50%;
+  ${getOnDarkBoxShadow};
 `;
 
 export const CircleLine = styled.div<LayoutProps & ColorProps>`
   ${color};
   ${layout};
   width: 2px;
+  ${getOnDarkBoxShadow};
 `;

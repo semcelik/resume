@@ -3,20 +3,23 @@ import { TThemePrimitives } from 'types/theme';
 import COLORS from './common/colors';
 
 const darkThemePrimitives: TThemePrimitives = {
-  primary: COLORS.red500,
-  primaryBackground: COLORS.black900,
+  primary: COLORS.green500,
+  primaryBackground: COLORS.black800,
   primaryText: COLORS.gray400,
 
   // Pill
-  pillBackground: COLORS.red500,
-  pillText: COLORS.black900,
+  pillBackground: COLORS.green500,
+  pillText: COLORS.black800,
 
   // Timeline
-  timelineLine: COLORS.red500,
+  timelineLine: COLORS.green500,
 
   // Bar
-  barBackground: COLORS.gray600,
-  barBackgroundFilled: COLORS.red500,
+  barBackground: COLORS.gray400,
+  barBackgroundFilled: COLORS.green500,
+
+  // JobCard
+  jobCardImageBackground: COLORS.gray400,
 };
 
 export default darkThemePrimitives;

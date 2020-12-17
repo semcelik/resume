@@ -9,3 +9,6 @@ export { default as ReduxIcon } from './components/ReduxIcon';
 export { default as ReduxSagaIcon } from './components/ReduxSagaIcon';
 export { default as SassIcon } from './components/SassIcon';
 export { default as TypeScriptIcon } from './components/TypeScriptIcon';
+export { default as LinkedInIcon } from './components/LinkedInIcon';
+export { default as GitHubIcon } from './components/GitHubIcon';
+export { default as GmailIcon } from './components/GmailIcon';

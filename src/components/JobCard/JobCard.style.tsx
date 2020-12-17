@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ColorProps, color } from 'styled-system';
 
 import Text from 'components/Text';
 
@@ -27,7 +28,8 @@ export const DateText = styled(Text)`
   margin-left: 4px;
 `;
 
-export const ImageWrapper = styled.div`
+export const ImageWrapper = styled.div<ColorProps>`
+  ${color};
   width: 72px;
   height: 72px;
   min-width: 72px;

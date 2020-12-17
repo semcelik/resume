@@ -13,7 +13,7 @@ function ProfessionalHistory(): ReactElement {
         {PROFESSIONAL_HISTORY_CONTENTS.map(
           ({ titleId, subTitleId, imageSrc, descriptionId, startedAt, finishedAt }) => (
             <JobCard
-              key={titleId}
+              key={subTitleId}
               titleId={titleId}
               subTitleId={subTitleId}
               imageSrc={imageSrc}

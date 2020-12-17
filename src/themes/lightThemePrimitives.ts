@@ -5,7 +5,7 @@ import COLORS from './common/colors';
 const lightThemePrimitives: TThemePrimitives = {
   primary: COLORS.red500,
   primaryBackground: COLORS.gray500,
-  primaryText: COLORS.black900,
+  primaryText: COLORS.black800,
 
   // Pill
   pillBackground: COLORS.red500,
@@ -17,6 +17,9 @@ const lightThemePrimitives: TThemePrimitives = {
   // Bar
   barBackground: COLORS.gray600,
   barBackgroundFilled: COLORS.red500,
+
+  // JobCard
+  jobCardImageBackground: COLORS.transparent,
 };
 
 export default lightThemePrimitives;

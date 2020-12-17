@@ -1,4 +1,11 @@
-import { GraphqlIcon, JestIcon, ReactIcon, ReduxIcon, TypeScriptIcon } from 'components/Icons';
+import {
+  GraphqlIcon,
+  JestIcon,
+  ReactIcon,
+  ReduxIcon,
+  SassIcon,
+  TypeScriptIcon,
+} from 'components/Icons';
 import { TBarProps } from 'components/Bar';
 import { TEducationCardProps } from 'components/EducationCard';
 import { TSkillCardProps } from 'components/SkillCard';
@@ -47,14 +54,16 @@ export const SKILLS_CONTENT: { TOP_SKILLS: TSkillCardProps[]; ALSO_HAVE: TPillPr
       icon: GraphqlIcon,
       textId: 'page.skills.graphql',
     },
-    // TODO: (semih) add one more main skill
+    {
+      icon: SassIcon,
+      textId: 'page.skills.sass',
+    },
   ],
   ALSO_HAVE: [
     { textId: 'page.skills.reduxSaga' },
     { textId: 'page.skills.testingLibrary' },
     { textId: 'page.skills.styledComponents' },
     { textId: 'page.skills.webpack' },
-    { textId: 'page.skills.sass' },
     { textId: 'page.skills.java' },
     { textId: 'page.skills.springFramework' },
     { textId: 'page.skills.appium' },

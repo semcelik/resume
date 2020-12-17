@@ -3,6 +3,7 @@ import { useTheme } from 'styled-components';
 
 import { DateIcon } from 'components/Icons';
 import Text from 'components/Text';
+import Image from 'components/Image';
 
 import getFormattedDate from 'helpers/getFormattedDate';
 import { FontSize, FontWeight } from 'constants/props';
@@ -47,7 +48,7 @@ function JobCard({
         </DateWrapper>
       </Content>
       <ImageWrapper>
-        {imageSrc && <img width="72px" height="auto" src={imageSrc} alt="Job Logo" />}
+        {imageSrc && <Image width="100%" height="auto" src={imageSrc} alt="Job Logo" />}
       </ImageWrapper>
     </Container>
   );

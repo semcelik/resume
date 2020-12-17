@@ -10,7 +10,7 @@ function Text({
   values,
   size = FontSize.medium,
   fontWeight = FontWeight.normal,
-  color,
+  color = 'primaryText',
   children,
   className,
 }: TTextProps): ReactElement {

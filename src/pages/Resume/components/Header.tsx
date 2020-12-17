@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react';
 
 import Box from 'components/Box';
 import Text from 'components/Text';
+import Image from 'components/Image';
 
 import { FontSize, FontWeight } from 'constants/props';
 import IMAGES from 'constants/images';
@@ -11,7 +12,13 @@ function Header(): ReactElement {
   return (
     <Content display="flex">
       <Box marginRight="l" display="flex">
-        <img width={128} height={150} src={IMAGES.profileImage} alt="Profile" />
+        <Image
+          onDarkFilter="grayscale(0.7)"
+          width={128}
+          height={150}
+          src={IMAGES.profileImage}
+          alt="Profile"
+        />
       </Box>
       <Box display="flex" justifyContent="center" flexDirection="column" paddingTop="l">
         <Text
