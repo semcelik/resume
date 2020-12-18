@@ -12,8 +12,8 @@ function ProfessionalHistory(): ReactElement {
       <Timeline gap="24px" lineTop="8px">
         {PROFESSIONAL_HISTORY_CONTENTS.map(
           ({
-            titleId,
-            subTitleId,
+            companyId,
+            jobTitleId,
             imageSrc,
             descriptionId,
             startedAt,
@@ -21,9 +21,9 @@ function ProfessionalHistory(): ReactElement {
             onDarkFilter,
           }) => (
             <JobCard
-              key={subTitleId}
-              titleId={titleId}
-              subTitleId={subTitleId}
+              key={companyId}
+              companyId={companyId}
+              jobTitleId={jobTitleId}
               imageSrc={imageSrc}
               descriptionId={descriptionId}
               startedAt={startedAt}
