@@ -11,6 +11,7 @@ export const Container = styled.div`
     }
 
     :hover {
+      // FIXME: (semih) doesn't work smoothly on safari
       > svg {
         filter: none;
       }
