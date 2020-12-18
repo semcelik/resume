@@ -7,4 +7,5 @@ export type TJobCardProps = {
   startedAt: string;
   finishedAt?: string;
   imageSrc?: string;
+  onDarkFilter?: string;
 };

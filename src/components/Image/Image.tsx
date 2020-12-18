@@ -4,13 +4,7 @@ import { useThemeContext } from 'contexts/ThemeProvider';
 import Theme from 'constants/theme';
 import { TImageProps } from './Image.types';
 
-function Image({
-  src,
-  alt,
-  invertOnDark = true,
-  onDarkFilter = 'invert(100%)',
-  ...rest
-}: TImageProps): ReactElement {
+function Image({ src, alt, onDarkFilter, ...rest }: TImageProps): ReactElement {
   const { theme } = useThemeContext();
 
   return (
@@ -18,7 +12,7 @@ function Image({
       src={src}
       alt={alt}
       {...rest}
-      style={invertOnDark && theme === Theme.DARK ? { filter: onDarkFilter } : {}}
+      style={theme === Theme.DARK ? { filter: onDarkFilter } : {}}
     />
   );
 }

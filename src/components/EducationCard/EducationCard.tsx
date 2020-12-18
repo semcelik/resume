@@ -17,15 +17,7 @@ function EducationCard({
   return (
     <Container>
       <ImageWrapper>
-        {imageSrc && (
-          <Image
-            onDarkFilter="grayscale(0.9)"
-            width="64px"
-            height="auto"
-            src={imageSrc}
-            alt="School logo"
-          />
-        )}
+        {imageSrc && <Image width="64px" height="auto" src={imageSrc} alt="School logo" />}
       </ImageWrapper>
       <Content>
         <Text textId={schoolId} size={FontSize.large} />

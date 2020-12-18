@@ -24,6 +24,7 @@ function JobCard({
   startedAt,
   finishedAt,
   imageSrc,
+  onDarkFilter,
 }: TJobCardProps): ReactElement {
   const { colors } = useTheme();
 
@@ -48,7 +49,15 @@ function JobCard({
         </DateWrapper>
       </Content>
       <ImageWrapper>
-        {imageSrc && <Image width="100%" height="auto" src={imageSrc} alt="Job Logo" />}
+        {imageSrc && (
+          <Image
+            width="100%"
+            height="auto"
+            src={imageSrc}
+            alt="Job Logo"
+            onDarkFilter={onDarkFilter}
+          />
+        )}
       </ImageWrapper>
     </Container>
   );
