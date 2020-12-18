@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { color, ColorProps } from 'styled-system';
 
+import { getOnDarkBoxShadow } from 'helpers/style';
+
 export const Container = styled.div<ColorProps>`
   ${color};
   display: inline-flex;
@@ -10,4 +12,5 @@ export const Container = styled.div<ColorProps>`
   margin-bottom: 4px;
   border-radius: 8px;
   white-space: nowrap;
+  ${getOnDarkBoxShadow};
 `;

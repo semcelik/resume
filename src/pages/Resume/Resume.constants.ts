@@ -1,11 +1,41 @@
-import { GraphqlIcon, JestIcon, ReactIcon, ReduxIcon, TypeScriptIcon } from 'components/Icons';
+import {
+  GitHubIcon,
+  GmailIcon,
+  GraphqlIcon,
+  JestIcon,
+  LinkedInIcon,
+  ReactIcon,
+  ReduxIcon,
+  SassIcon,
+  TypeScriptIcon,
+} from 'components/Icons';
 import { TBarProps } from 'components/Bar';
 import { TEducationCardProps } from 'components/EducationCard';
 import { TSkillCardProps } from 'components/SkillCard';
 import { TPillProps } from 'components/Pill';
 import { TJobCardProps } from 'components/JobCard';
+import { TContactCardProps } from 'components/ContactCard';
 
 import IMAGES from 'constants/images';
+import { HrefType } from 'constants/common';
+
+export const CONTACT_CONTENTS: TContactCardProps[] = [
+  {
+    icon: GitHubIcon,
+    type: HrefType.https,
+    link: 'github.com/semcelik',
+  },
+  {
+    icon: LinkedInIcon,
+    type: HrefType.https,
+    link: 'linkedin.com/in/semcelik',
+  },
+  {
+    icon: GmailIcon,
+    type: HrefType.mail,
+    link: 's.celikce@gmail.com',
+  },
+];
 
 export const EDUCATION_CONTENTS: TEducationCardProps[] = [
   {
@@ -47,14 +77,16 @@ export const SKILLS_CONTENT: { TOP_SKILLS: TSkillCardProps[]; ALSO_HAVE: TPillPr
       icon: GraphqlIcon,
       textId: 'page.skills.graphql',
     },
-    // TODO: (semih) add one more main skill
+    {
+      icon: SassIcon,
+      textId: 'page.skills.sass',
+    },
   ],
   ALSO_HAVE: [
     { textId: 'page.skills.reduxSaga' },
     { textId: 'page.skills.testingLibrary' },
     { textId: 'page.skills.styledComponents' },
     { textId: 'page.skills.webpack' },
-    { textId: 'page.skills.sass' },
     { textId: 'page.skills.java' },
     { textId: 'page.skills.springFramework' },
     { textId: 'page.skills.appium' },
@@ -97,6 +129,7 @@ export const PROFESSIONAL_HISTORY_CONTENTS: TJobCardProps[] = [
     descriptionId: 'pages.professionalHistory.huawei.descriptionId',
     startedAt: '2018-03',
     finishedAt: '2019-09',
+    onDarkFilter: 'contrast(0)',
   },
   {
     titleId: 'labels.frontendDeveloper',
@@ -129,5 +162,6 @@ export const PROFESSIONAL_HISTORY_CONTENTS: TJobCardProps[] = [
     descriptionId: 'pages.professionalHistory.stajOkulu.descriptionId',
     startedAt: '2015-07',
     finishedAt: '2015-09',
+    onDarkFilter: 'contrast(0)',
   },
 ];

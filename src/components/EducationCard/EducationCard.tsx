@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react';
 
 import Text from 'components/Text';
+import Image from 'components/Image';
 
 import { FontSize } from 'constants/props';
 import { TEducationCardProps } from './EducationCard.types';
@@ -16,7 +17,7 @@ function EducationCard({
   return (
     <Container>
       <ImageWrapper>
-        {imageSrc && <img width="64px" height="auto" src={imageSrc} alt="School logo" />}
+        {imageSrc && <Image width="64px" height="auto" src={imageSrc} alt="School logo" />}
       </ImageWrapper>
       <Content>
         <Text textId={schoolId} size={FontSize.large} />

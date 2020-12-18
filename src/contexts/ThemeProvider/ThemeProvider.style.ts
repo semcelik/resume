@@ -12,6 +12,12 @@ const GlobalThemeStyle = createGlobalStyle`
   body {
     margin: 0;
     min-height: 100vh;
+    background-color: ${({ theme }) => theme.colors.primaryBackground};
+    transition: background-color 0.3s ease-out;
+  }
+
+  a {
+    text-decoration: none;
   }
 `;
 

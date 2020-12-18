@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { color, ColorProps } from 'styled-system';
 
+import { getOnDarkBoxShadow } from 'helpers/style';
+
 export const Container = styled.div`
   margin-bottom: 24px;
   width: 100%;
@@ -25,6 +27,7 @@ export const BarFilled = styled.div<ColorProps & { percentage: number }>`
   position: absolute;
   border-radius: 2px;
   left: 0;
+  ${getOnDarkBoxShadow}
 `;
 
 export const BarContent = styled.div<ColorProps>`

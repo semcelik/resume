@@ -9,10 +9,8 @@ import Resume from './pages/Resume';
 function App(): ReactElement {
   return (
     <ThemeProvider>
-      <Box backgroundColor="primaryBackground">
-        <Box maxWidth={960} margin="0px auto">
-          <Resume />
-        </Box>
+      <Box maxWidth={960} margin="0px auto">
+        <Resume />
       </Box>
     </ThemeProvider>
   );

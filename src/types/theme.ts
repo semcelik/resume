@@ -1,4 +1,7 @@
+import Theme from 'constants/theme';
+
 export type TTheme = {
+  type: Theme;
   colors: TThemePrimitives;
   space: TSpaces;
   breakpoints: TBreakpoints;
@@ -15,10 +18,13 @@ export type TSpaces = {
 
 export type TColors = {
   black900: string;
+  black800: string;
   red500: string;
   gray600: string;
   gray500: string;
   gray400: string;
+  green500: string;
+  transparent: string;
 };
 
 export type TThemePrimitives = {
@@ -30,6 +36,7 @@ export type TThemePrimitives = {
   timelineLine: string;
   barBackground: string;
   barBackgroundFilled: string;
+  jobCardImageBackground: string;
 };
 
 export type TBreakpoints = string[] & {

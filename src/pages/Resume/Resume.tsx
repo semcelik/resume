@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Skills from './components/Skills';
 import Language from './components/Language';
 import ProfessionalHistory from './components/ProfessionalHistory';
+import Contact from './components/Contact';
 
 function Resume(): ReactElement {
   return (
@@ -19,6 +20,7 @@ function Resume(): ReactElement {
       flexWrap="wrap">
       <Box flex={1.5} marginRight={{ s: 'l' }}>
         <Header />
+        <Contact />
         <AboutMe />
         <Education />
         <Skills />

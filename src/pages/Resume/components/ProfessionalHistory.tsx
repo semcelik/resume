@@ -11,15 +11,24 @@ function ProfessionalHistory(): ReactElement {
     <Content headerId="pages.professionalHistory.title">
       <Timeline gap="24px" lineTop="8px">
         {PROFESSIONAL_HISTORY_CONTENTS.map(
-          ({ titleId, subTitleId, imageSrc, descriptionId, startedAt, finishedAt }) => (
+          ({
+            titleId,
+            subTitleId,
+            imageSrc,
+            descriptionId,
+            startedAt,
+            finishedAt,
+            onDarkFilter,
+          }) => (
             <JobCard
-              key={titleId}
+              key={subTitleId}
               titleId={titleId}
               subTitleId={subTitleId}
               imageSrc={imageSrc}
               descriptionId={descriptionId}
               startedAt={startedAt}
               finishedAt={finishedAt}
+              onDarkFilter={onDarkFilter}
             />
           )
         )}
