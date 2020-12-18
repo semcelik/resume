@@ -5,7 +5,7 @@ import { DateIcon } from 'components/Icons';
 import Text from 'components/Text';
 import Image from 'components/Image';
 
-import getFormattedDate from 'helpers/getFormattedDate';
+import { getDifferenceBetweenDates, getFormattedDate } from 'helpers/date';
 import { FontSize, FontWeight } from 'constants/props';
 import { TJobCardProps } from './JobCard.types';
 import {
@@ -13,13 +13,14 @@ import {
   Content,
   DateText,
   DateWrapper,
+  DateWorkedText,
+  DescriptionText,
   ImageWrapper,
-  SubTitleText,
 } from './JobCard.style';
 
 function JobCard({
-  titleId,
-  subTitleId,
+  companyId,
+  jobTitleId,
   descriptionId,
   startedAt,
   finishedAt,
@@ -35,31 +36,41 @@ function JobCard({
     return [formattedStartedAt, formattedFinishedAt].join(' - ');
   }, [startedAt, finishedAt]);
 
+  const workedTime = useMemo(() => getDifferenceBetweenDates(startedAt, finishedAt), [
+    startedAt,
+    finishedAt,
+  ]);
+
   return (
-    <Container>
-      <Content>
-        <Text textId={titleId} size={FontSize.large} />
-        <SubTitleText textId={subTitleId} />
-        <Text textId={descriptionId} fontWeight={FontWeight.light} />
-        <DateWrapper>
-          <DateIcon iconColor={colors.primary} />
-          <DateText fontWeight={FontWeight.light} size={FontSize.small}>
-            {date}
-          </DateText>
-        </DateWrapper>
-      </Content>
-      <ImageWrapper>
-        {imageSrc && (
-          <Image
-            width="100%"
-            height="auto"
-            src={imageSrc}
-            alt="Job Logo"
-            onDarkFilter={onDarkFilter}
-          />
-        )}
-      </ImageWrapper>
-    </Container>
+    <div>
+      <Container>
+        <Content>
+          <Text textId={companyId} size={FontSize.large} />
+          <Text textId={jobTitleId} />
+          <DescriptionText textId={descriptionId} fontWeight={FontWeight.light} />
+        </Content>
+        <ImageWrapper>
+          {imageSrc && (
+            <Image
+              width="100%"
+              height="auto"
+              src={imageSrc}
+              alt="Job Logo"
+              onDarkFilter={onDarkFilter}
+            />
+          )}
+        </ImageWrapper>
+      </Container>
+      <DateWrapper>
+        <DateIcon iconColor={colors.primary} />
+        <DateText fontWeight={FontWeight.light} size={FontSize.small}>
+          {date}
+        </DateText>
+        <DateWorkedText size={FontSize.xsmall} fontWeight={FontWeight.light} color="primary">
+          {`(${workedTime})`}
+        </DateWorkedText>
+      </DateWrapper>
+    </div>
   );
 }
 

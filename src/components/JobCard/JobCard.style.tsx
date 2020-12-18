@@ -14,8 +14,8 @@ export const Content = styled.div`
   flex-grow: 1;
 `;
 
-export const SubTitleText = styled(Text)`
-  margin-bottom: 8px;
+export const DescriptionText = styled(Text)`
+  margin-top: 8px;
 `;
 
 export const DateWrapper = styled.div`
@@ -26,6 +26,10 @@ export const DateWrapper = styled.div`
 
 export const DateText = styled(Text)`
   margin-left: 4px;
+`;
+
+export const DateWorkedText = styled(Text)`
+  margin-left: 8px;
 `;
 
 export const ImageWrapper = styled.div<ColorProps>`

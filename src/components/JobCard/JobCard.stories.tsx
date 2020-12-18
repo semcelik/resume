@@ -10,13 +10,13 @@ export default {
   title: 'Components/JobCard',
   component: JobCard,
   argTypes: {
-    titleId: ARG_TYPES.id,
-    subTitleId: ARG_TYPES.id,
+    companyId: ARG_TYPES.id,
+    jobTitleId: ARG_TYPES.id,
     descriptionId: ARG_TYPES.id,
   },
   args: {
-    titleId: 'labels.frontendDeveloper',
-    subTitleId: 'labels.wamo',
+    companyId: 'labels.wamo',
+    jobTitleId: 'labels.frontendDeveloper',
     descriptionId: 'pages.professionalHistory.wamo.descriptionId',
     startedAt: '2020-11',
   },
