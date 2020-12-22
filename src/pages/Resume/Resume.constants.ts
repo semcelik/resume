@@ -101,7 +101,7 @@ export const LANGUAGE_CONTENTS: TBarProps[] = [
   },
   {
     titleId: 'labels.english',
-    descriptionId: 'labels.intermediate',
+    descriptionId: 'labels.upperIntermediate',
     percentage: 85,
   },
 ];
