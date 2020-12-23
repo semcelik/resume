@@ -7,9 +7,14 @@ function useOffsetHeight(
   const [offsetHeight, setOffsetHeight] = useState<number>(initialValue);
 
   useEffect(() => {
-    if (elementRef.current) {
-      setOffsetHeight(elementRef.current.offsetHeight);
+    function calculateOffsetHeight() {
+      if (elementRef.current) {
+        setOffsetHeight(elementRef.current.offsetHeight);
+      }
     }
+
+    calculateOffsetHeight();
+    window.addEventListener('resize', calculateOffsetHeight);
   }, []);
 
   return [elementRef, offsetHeight];
