@@ -47,7 +47,7 @@ export const EDUCATION_CONTENTS: TEducationCardProps[] = [
   },
   {
     schoolId: 'page.education.yiaaol.school',
-    year: '2012-2017',
+    year: '2008-2012',
   },
 ];
 
@@ -133,7 +133,7 @@ export const PROFESSIONAL_HISTORY_CONTENTS: TJobCardProps[] = [
   },
   {
     companyId: 'labels.startupHeroes',
-    jobTitleId: 'labels.frontendDeveloper',
+    jobTitleId: 'labels.softwareDeveloper',
     imageSrc: IMAGES.startupheroesImage,
     descriptionId: 'pages.professionalHistory.startupHeroes.descriptionId',
     startedAt: '2017-07',
@@ -141,7 +141,7 @@ export const PROFESSIONAL_HISTORY_CONTENTS: TJobCardProps[] = [
   },
   {
     companyId: 'labels.migros',
-    jobTitleId: 'labels.frontendDeveloper',
+    jobTitleId: 'labels.softwareDeveloper',
     imageSrc: IMAGES.migrosImage,
     descriptionId: 'pages.professionalHistory.migros.descriptionId',
     startedAt: '2017-01',
